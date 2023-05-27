@@ -117,7 +117,7 @@ def main():
 
     logging.info("Creating the connection to the database")
 
-    engine = create_engine('postgresql://postgres:Lorenzo_22@localhost:5432/Hotel_Customer_segmentation')
+    engine = create_engine('postgresql://postgres:YOUR_PSW@localhost:5432/Hotel_Customer_segmentation')
 
     # Create the tables in Postgres
 
