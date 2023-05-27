@@ -1,0 +1,41 @@
+[ 2023-05-14 18:54:31,295 ] 30 root - INFO - Retrieving parquet file from the Azure Blob Storage container without saving into disk
+[ 2023-05-14 18:54:31,304 ] 513 azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://marcelloblfiles.blob.core.windows.net/hotelcustomerdatacontainer/ingested_hotel_customers_data.parquet'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.16.0 Python/3.10.11 (Windows-10-10.0.19045-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '60dadaad-f280-11ed-b0bd-44af2846839e'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+[ 2023-05-14 18:54:31,761 ] 549 azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '11911035'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 08 May 2023 14:39:25 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DB4FD205273B87"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '6a67f4ff-201e-0110-688d-8636e9000000'
+    'x-ms-client-request-id': '60dadaad-f280-11ed-b0bd-44af2846839e'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Sun, 14 May 2023 17:54:31 GMT'
+[ 2023-05-14 18:54:35,061 ] 34 root - INFO - Parquet file from the Azure Blob Storage retrieved successfully
+[ 2023-05-14 18:54:35,061 ] 40 root - INFO - Apply some data cleaning: drop duplicates, drop null values, drop columns
+[ 2023-05-14 18:54:35,125 ] 44 root - INFO - Data cleaning applied successfully
+[ 2023-05-14 18:54:35,126 ] 52 root - INFO - Creating dimension tables
+[ 2023-05-14 18:54:35,156 ] 82 root - INFO - Dimension tables created successfully
+[ 2023-05-14 18:54:35,156 ] 86 root - INFO - Creating fact table
+[ 2023-05-14 18:54:35,399 ] 114 root - INFO - Fact table created successfully
+[ 2023-05-14 18:54:35,399 ] 118 root - INFO - Creating the connection to the database
+[ 2023-05-14 18:54:35,446 ] 124 root - INFO - Creating the tables in Postgres
+[ 2023-05-14 18:54:45,672 ] 141 root - INFO - Tables created successfully

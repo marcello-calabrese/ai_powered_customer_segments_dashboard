@@ -1,0 +1,30 @@
+[ 2023-05-08 16:52:09,559 ] 21 root - INFO - Retrieving data from URL
+[ 2023-05-08 16:52:12,947 ] 23 root - INFO - Data retrieved from URL
+[ 2023-05-08 16:52:12,947 ] 25 root - INFO - Uploading data to Azure Blob Storage
+[ 2023-05-08 16:52:13,103 ] 510 azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://marcelloblfiles.blob.core.windows.net/hotelcustomerdatacontainer/ingested_data_hotel.parquet'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '11911035'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.16.0 Python/3.10.11 (Windows-10-10.0.19045-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '4c77852b-edb8-11ed-84ea-932ca7e29b37'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[ 2023-05-08 16:52:19,719 ] 549 azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Mon, 08 May 2023 15:52:19 GMT'
+    'ETag': '"0x8DB4FDC34AC7F3D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '20f74a04-c01e-0028-60c5-816c24000000'
+    'x-ms-client-request-id': '4c77852b-edb8-11ed-84ea-932ca7e29b37'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Mon, 08 May 2023 15:52:19 GMT'
+[ 2023-05-08 16:52:19,724 ] 27 root - INFO - Data uploaded to Azure Blob Storage
