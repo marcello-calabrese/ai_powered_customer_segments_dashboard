@@ -19,6 +19,8 @@ LINK: https://data.mendeley.com/public-files/datasets/j83f5fsh6c/files/d2ce02f4-
 blob:https://data.mendeley.com/13496557-80f0-4121-be99-08383f64b71e
 https://data.mendeley.com/datasets/j83f5fsh6c
 
+## PROJECT WALKTHROUGH: [Medium Article](https://medium.com/data-and-beyond/unveiling-customer-insights-ai-powered-segmentation-dashboard-284317708153)
+
 ## FINAL DASHBOARDS
 
 ![dashboards](https://github.com/marcello-calabrese/ai_powered_customer_segments_dashboard/assets/74682725/480858ee-8982-4857-95cd-42607ae3f444)
